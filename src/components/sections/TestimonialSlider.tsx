@@ -13,7 +13,7 @@ export function TestimonialSlider({ items, rating, count }: { items: Testimonial
       <div className="col-span-12 lg:col-span-4">
         <p className="eyebrow text-signal">Customer evidence</p>
         <p className="display mt-6 text-[clamp(4rem,3rem+4vw,7rem)] leading-none">{rating.toFixed(1)}</p>
-        <div className="mt-3 flex gap-1 text-amber" aria-hidden>
+        <div className="mt-3 flex gap-1 text-sky" aria-hidden>
           {Array.from({ length: 5 }, (_, k) => (
             <Star key={k} className="size-5" fill="currentColor" strokeWidth={0} />
           ))}

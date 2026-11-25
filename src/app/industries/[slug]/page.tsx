@@ -44,7 +44,7 @@ export default async function IndustryPage({ params }: Params) {
         sections={ind.sections}
         aside={
           <div className="hidden lg:block">
-            <p className="eyebrow mb-3 text-ink/60">Other industries</p>
+            <p className="eyebrow mb-3 text-ink/65">Other industries</p>
             <ul className="space-y-1.5 text-sm">
               {others.map((o) => (
                 <li key={o.slug}><Link href={`/industries/${o.slug}`} className="link-underline text-ink/70 hover:text-ink">{o.name}</Link></li>

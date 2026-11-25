@@ -7,7 +7,7 @@ export function SpecTable({ caption, head, rows }: { caption: string; head: read
         <thead>
           <tr className="border-b-2 border-ink">
             {head.map((h) => (
-              <th key={h} scope="col" className="eyebrow py-3 pr-6 text-ink/60">{h}</th>
+              <th key={h} scope="col" className="eyebrow py-3 pr-6 text-ink/65">{h}</th>
             ))}
           </tr>
         </thead>

@@ -37,7 +37,7 @@ export function ApplicationsShowcase({ items }: { items: ShowcaseItem[] }) {
               onFocus={() => setActive(i)}
               className="group grid grid-cols-[3rem_1fr_auto] items-start gap-x-4 py-7 md:py-8"
             >
-              <span className={cn("eyebrow pt-2 transition-colors", i === active ? "text-signal" : "text-ink/60")}>{String(i + 1).padStart(2, "0")}</span>
+              <span className={cn("eyebrow pt-2 transition-colors", i === active ? "text-signal" : "text-ink/65")}>{String(i + 1).padStart(2, "0")}</span>
               <span>
                 <span className={cn("block font-display text-2xl font-medium tracking-tight transition-colors md:text-[2rem] md:leading-tight", i === active ? "text-ink" : "text-ink/65 group-hover:text-ink")}>
                   {item.name}

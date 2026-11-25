@@ -58,18 +58,18 @@ export default async function ProductPage({ params }: Params) {
         <dl className="container-x grid sm:grid-cols-3">
           {p.keyFigures.map((f) => (
             <div key={f.label} className="flex flex-col border-ink/10 py-10 sm:border-r sm:px-8 sm:first:pl-0 sm:last:border-r-0 max-sm:border-b">
-              <dt className="order-2 mt-2 text-sm text-ink/60">{f.label}</dt>
+              <dt className="order-2 mt-2 text-sm text-ink/65">{f.label}</dt>
               <dd className="display order-1 text-[clamp(2.5rem,2rem+2vw,4rem)]">{f.value}</dd>
             </div>
           ))}
         </dl>
-        <p className="container-x pb-6 text-xs text-ink/60">Figures are as stated on the manufacturer’s data sheet. Results vary with equipment, fuel quality and operating conditions.</p>
+        <p className="container-x pb-6 text-xs text-ink/65">Figures are as stated on the manufacturer’s data sheet. Results vary with equipment, fuel quality and operating conditions.</p>
       </section>
 
       <div className="container-x grid-12 gap-y-12 py-20 md:py-28">
         <aside className="col-span-12 lg:col-span-3">
           <nav aria-label="Product sections" className="lg:sticky lg:top-28">
-            <p className="eyebrow mb-4 text-ink/60">Data sheet</p>
+            <p className="eyebrow mb-4 text-ink/65">Data sheet</p>
             <ol className="flex flex-wrap gap-2 lg:block lg:space-y-1 lg:border-l lg:border-ink/12">
               {nav.map(([id, label]) => (
                 <li key={id}>
@@ -136,7 +136,7 @@ export default async function ProductPage({ params }: Params) {
                 <ol className="mt-10 grid gap-8 sm:grid-cols-3">
                   {p.dosage.steps.map((s, i) => (
                     <li key={s.title}>
-                      <p className="eyebrow text-ink/60">Step {i + 1}</p>
+                      <p className="eyebrow text-ink/65">Step {i + 1}</p>
                       <h3 className="mt-2 text-lg font-medium">{s.title}</h3>
                       <p className="mt-2 text-sm text-ink/70">{s.text}</p>
                     </li>

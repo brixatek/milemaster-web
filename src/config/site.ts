@@ -21,8 +21,8 @@ export const brand = {
   logoSrc: null as string | null,
   colors: {
     signal: "#D3241B",
-    ink: "#0C0E11",
-    bone: "#F2EFE9",
+    ink: "#0B1A2E",
+    bone: "#EDF1F6",
   },
 } as const;
 

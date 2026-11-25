@@ -39,10 +39,10 @@ export function SprayField() {
   return (
     <div aria-hidden className="pointer-events-none absolute inset-y-0 right-0 w-full [container-type:inline-size] lg:w-[52%]">
       <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="absolute inset-0 size-full opacity-40 lg:opacity-100">
-        <path d="M0 47.5 H7 L10 49.2 V50.8 L7 52.5 H0" fill="none" stroke="rgb(242 239 233 / .45)" strokeWidth=".15" vectorEffect="non-scaling-stroke" />
-        <path d="M10 50 L100 12 M10 50 L100 88" stroke="rgb(242 239 233 / .14)" strokeWidth=".1" strokeDasharray=".6 1.2" vectorEffect="non-scaling-stroke" />
+        <path d="M0 47.5 H7 L10 49.2 V50.8 L7 52.5 H0" fill="none" stroke="rgb(237 241 246 / .45)" strokeWidth=".15" vectorEffect="non-scaling-stroke" />
+        <path d="M10 50 L100 12 M10 50 L100 88" stroke="rgb(237 241 246 / .14)" strokeWidth=".1" strokeDasharray=".6 1.2" vectorEffect="non-scaling-stroke" />
         {STATIC.map((d, i) => (
-          <ellipse key={i} cx={d.x.toFixed(2)} cy={d.y.toFixed(2)} rx={(d.s * 0.55).toFixed(3)} ry={(d.s * 0.75).toFixed(3)} fill={d.red ? "#d3241b" : "#f2efe9"} fillOpacity={d.red ? 0.9 : d.o.toFixed(2)} />
+          <ellipse key={i} cx={d.x.toFixed(2)} cy={d.y.toFixed(2)} rx={(d.s * 0.55).toFixed(3)} ry={(d.s * 0.75).toFixed(3)} fill={d.red ? "#d3241b" : "#edf1f6"} fillOpacity={d.red ? 0.9 : d.o.toFixed(2)} />
         ))}
       </svg>
       <div className="absolute top-1/2 left-[10%] motion-reduce:hidden">
@@ -53,7 +53,7 @@ export function SprayField() {
             style={{
               width: d.size,
               height: d.size,
-              background: d.red ? "var(--color-signal)" : "rgb(242 239 233 / 0.8)",
+              background: d.red ? "var(--color-signal)" : "rgb(237 241 246 / 0.8)",
               ["--dx" as string]: d.dx,
               ["--dy" as string]: d.dy,
               animation: `spray ${d.dur} cubic-bezier(.16,1,.3,1) ${d.delay} infinite`,

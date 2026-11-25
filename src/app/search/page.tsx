@@ -47,7 +47,7 @@ export default async function SearchPage({ searchParams }: Props) {
                   <span>
                     <span className="block text-2xl font-medium transition-colors group-hover:text-signal">{r.title}</span>
                     <span className="mt-2 block max-w-3xl text-ink/65">{r.excerpt}</span>
-                    <span className="mt-2 block font-mono text-xs text-ink/60">{r.href}</span>
+                    <span className="mt-2 block font-mono text-xs text-ink/65">{r.href}</span>
                   </span>
                 </Link>
               </li>
@@ -56,7 +56,7 @@ export default async function SearchPage({ searchParams }: Props) {
         )}
         {(!q || results.length === 0) && (
           <div className="mt-10">
-            <p className="eyebrow text-ink/60">Popular searches</p>
+            <p className="eyebrow text-ink/65">Popular searches</p>
             <ul className="mt-4 flex flex-wrap gap-2">
               {popular.map((p) => (
                 <li key={p}><Link href={`/search?q=${encodeURIComponent(p)}`} className="inline-flex min-h-11 items-center border border-ink/20 px-4 hover:border-ink">{p}</Link></li>

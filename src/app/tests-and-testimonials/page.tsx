@@ -81,9 +81,9 @@ export default function TestsPage() {
               <h2 id="rev-t" className="display mt-4 text-display-s">In customers’ own words</h2>
               <div className="mt-8 flex items-baseline gap-4">
                 <span className="display text-6xl">{reviewSummary.rating}</span>
-                <span className="text-ink/60">/ 5 from {reviewSummary.count} reviews</span>
+                <span className="text-ink/65">/ 5 from {reviewSummary.count} reviews</span>
               </div>
-              <div className="mt-2 flex gap-1 text-amber" aria-hidden>
+              <div className="mt-2 flex gap-1 text-sky" aria-hidden>
                 {Array.from({ length: 5 }, (_, k) => <Star key={k} className="size-5" fill="currentColor" strokeWidth={0} />)}
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function TestsPage() {
                 <li key={t.name} className="mb-8 break-inside-avoid border-t border-ink/15 pt-6">
                   <blockquote className="text-lg leading-relaxed">“{t.quote}”</blockquote>
                   <p className="mt-4 font-medium">{t.name}{t.location ? `, ${t.location}` : ""}</p>
-                  {t.product && <p className="eyebrow mt-1 text-ink/60">{t.product}</p>}
+                  {t.product && <p className="eyebrow mt-1 text-ink/65">{t.product}</p>}
                 </li>
               ))}
             </ul>

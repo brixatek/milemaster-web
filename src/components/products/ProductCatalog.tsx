@@ -47,7 +47,7 @@ export function ProductCatalog({ items, applications }: Props) {
     <div>
       <div className="grid gap-6 border-y border-ink/12 py-6 lg:grid-cols-[auto_1fr_18rem] lg:items-center">
         <fieldset>
-          <legend className="eyebrow mb-3 text-ink/60">Fuel system</legend>
+          <legend className="eyebrow mb-3 text-ink/65">Fuel system</legend>
           <div className="flex flex-wrap gap-2">
             {fuels.map((f) => (
               <button
@@ -63,7 +63,7 @@ export function ProductCatalog({ items, applications }: Props) {
           </div>
         </fieldset>
         <div>
-          <label htmlFor="app-filter" className="eyebrow mb-3 block text-ink/60">Application</label>
+          <label htmlFor="app-filter" className="eyebrow mb-3 block text-ink/65">Application</label>
           <select id="app-filter" value={app} onChange={(e) => setApp(e.target.value)} className="h-11 w-full border border-ink/20 bg-paper px-3 text-sm lg:max-w-xs">
             <option value="all">All applications</option>
             {applications.map((a) => (
@@ -72,12 +72,12 @@ export function ProductCatalog({ items, applications }: Props) {
           </select>
         </div>
         <div>
-          <label htmlFor="product-search" className="eyebrow mb-3 block text-ink/60">Search products</label>
+          <label htmlFor="product-search" className="eyebrow mb-3 block text-ink/65">Search products</label>
           <input id="product-search" type="search" value={q} onChange={(e) => setQ(e.target.value)} placeholder="e.g. injector, cetane, seals" className="h-11 w-full border border-ink/20 bg-paper px-3 text-sm placeholder:text-ink/40" />
         </div>
       </div>
 
-      <p className="eyebrow mt-6 text-ink/60" aria-live="polite">
+      <p className="eyebrow mt-6 text-ink/65" aria-live="polite">
         {results.length} {results.length === 1 ? "product" : "products"}
       </p>
 

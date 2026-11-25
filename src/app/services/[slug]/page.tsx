@@ -61,7 +61,7 @@ export default async function ServicePage({ params }: Params) {
             </div>
             {s.slug === "fuel-storage-solutions" && (
               <div className="hidden lg:block">
-                <p className="eyebrow mb-3 text-ink/60">Who it’s for</p>
+                <p className="eyebrow mb-3 text-ink/65">Who it’s for</p>
                 <ul className="space-y-1.5 text-sm">
                   {industries.map((i) => (
                     <li key={i.slug}><Link href={`/industries/${i.slug}`} className="link-underline text-ink/70 hover:text-ink">{i.name}</Link></li>

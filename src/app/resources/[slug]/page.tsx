@@ -39,7 +39,7 @@ export default async function ResourcePage({ params }: Params) {
         aside={
           r.source ? (
             <div className="border-l-2 border-signal pl-4 text-sm text-ink/65">
-              <p className="eyebrow mb-2 text-ink/60">Data source</p>
+              <p className="eyebrow mb-2 text-ink/65">Data source</p>
               {r.source.href ? <a href={r.source.href} target="_blank" rel="noopener noreferrer" className="underline">{r.source.label}</a> : r.source.label}
             </div>
           ) : undefined
@@ -47,12 +47,12 @@ export default async function ResourcePage({ params }: Params) {
       />
       <section className="border-t border-ink/10 bg-bone py-16 md:py-24">
         <div className="container-x">
-          <h2 className="eyebrow text-ink/60">Keep reading</h2>
+          <h2 className="eyebrow text-ink/65">Keep reading</h2>
           <ul className="mt-8 grid gap-px bg-ink/10 md:grid-cols-3">
             {more.map((m) => (
               <li key={m.slug} className="bg-bone">
                 <Link href={`/resources/${m.slug}`} className="group block py-6 md:pr-8">
-                  <p className="eyebrow text-ink/60">{m.category}</p>
+                  <p className="eyebrow text-ink/65">{m.category}</p>
                   <p className="mt-2 text-xl font-medium transition-colors group-hover:text-signal">{m.title}</p>
                 </Link>
               </li>

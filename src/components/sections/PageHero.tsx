@@ -17,7 +17,7 @@ export function PageHero({ crumbs, eyebrow, title, intro, aside, children, size 
   return (
     <section className="on-dark relative isolate overflow-hidden bg-ink text-bone">
       <div aria-hidden className="blueprint absolute inset-0 -z-10 [mask-image:linear-gradient(to_bottom,black,transparent_85%)]" />
-      <div aria-hidden className="absolute -top-1/3 right-0 -z-10 size-[60vw] rounded-full bg-signal/10 blur-[120px]" />
+      <div aria-hidden className="absolute -top-1/3 right-0 -z-10 size-[60vw] rounded-full bg-sky/12 blur-[120px]" />
       <div className="container-x pt-[calc(var(--header-h)+2.5rem)] pb-14 md:pt-[calc(var(--header-h)+4rem)] md:pb-20">
         <Breadcrumbs items={crumbs} />
         <div className={cn("grid-12 mt-10 gap-y-10 md:mt-14", aside && "items-end")}>

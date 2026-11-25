@@ -10,7 +10,7 @@ export function ArtPanel({ variant, label, index, className }: { variant: ArtVar
   return (
     <div className={cn("on-dark isolate overflow-hidden bg-ink-2 text-bone", className)} aria-hidden>
       <div className="blueprint absolute inset-0" />
-      <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_80%_10%,rgb(211_36_27/0.22),transparent_60%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_80%_10%,rgb(63_167_214/0.18),transparent_60%)]" />
       <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" className="absolute inset-0 size-full">
         <Drawing variant={variant} />
       </svg>
@@ -25,8 +25,8 @@ export function ArtPanel({ variant, label, index, className }: { variant: ArtVar
 }
 
 function Drawing({ variant }: { variant: ArtVariant }) {
-  const stroke = "rgb(242 239 233 / 0.55)";
-  const faint = "rgb(242 239 233 / 0.18)";
+  const stroke = "rgb(237 241 246 / 0.55)";
+  const faint = "rgb(237 241 246 / 0.18)";
   switch (variant) {
     case "spray": {
       // Injector nozzle atomising fuel into a fine cone
@@ -45,7 +45,7 @@ function Drawing({ variant }: { variant: ArtVariant }) {
           <path d="M20 132 H70 L82 146 V154 L70 168 H20 Z" fill="none" stroke={stroke} strokeWidth="1.2" />
           <line x1="20" y1="150" x2="82" y2="150" stroke={faint} strokeDasharray="3 4" />
           {dots.map((d, i) => (
-            <circle key={i} cx={d.x.toFixed(2)} cy={d.y.toFixed(2)} r={d.s.toFixed(2)} fill={i % 15 === 0 ? "#d3241b" : "rgb(242 239 233 / 0.7)"} />
+            <circle key={i} cx={d.x.toFixed(2)} cy={d.y.toFixed(2)} r={d.s.toFixed(2)} fill={i % 15 === 0 ? "#d3241b" : "rgb(237 241 246 / 0.7)"} />
           ))}
           <path d="M82 150 L340 38 M82 150 L340 262" stroke={faint} strokeDasharray="2 6" />
         </g>

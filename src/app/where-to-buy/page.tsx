@@ -30,7 +30,7 @@ export default function WhereToBuyPage() {
               <li key={o.href} className="bg-paper">
                 <a href={o.href} target="_blank" rel="noopener noreferrer" className="group flex items-center justify-between py-6 pr-4 text-2xl font-medium transition-colors hover:text-signal sm:pl-0">
                   {o.label}
-                  <span className="flex items-center gap-2 text-sm font-normal text-ink/60 group-hover:text-signal">Opens in new tab <ArrowUpRight className="size-4" aria-hidden /></span>
+                  <span className="flex items-center gap-2 text-sm font-normal text-ink/65 group-hover:text-signal">Opens in new tab <ArrowUpRight className="size-4" aria-hidden /></span>
                 </a>
               </li>
             ))}

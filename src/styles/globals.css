@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
 /* ------------------------------------------------------------------
-   DESIGN TOKENS — "Refinery Editorial"
-   Ink-black industrial base, bone paper, one signal red (the X-Tend
-   brand colour), amber reserved for data highlights. Square corners,
+   DESIGN TOKENS — "Refinery Editorial" (navy edition)
+   Deep navy corporate base, cool white paper, one signal red (the X-Tend
+   brand colour) for actions, sky blue reserved for data highlights. Square corners,
    hairline rules, expanded grotesque display type, mono for specs.
    ------------------------------------------------------------------ */
 @theme {
-  --color-ink: #0c0e11;
-  --color-ink-2: #14181d;
-  --color-ink-3: #1d2228;
-  --color-graphite: #343a42;
-  --color-steel: #8b929b;
-  --color-mist: #c9ccd0;
-  --color-bone: #f2efe9;
-  --color-paper: #faf8f4;
+  --color-ink: #0b1a2e;
+  --color-ink-2: #13263f;
+  --color-ink-3: #1a3150;
+  --color-graphite: #2c3e57;
+  --color-steel: #8a9bb0;
+  --color-mist: #c8d2de;
+  --color-bone: #edf1f6;
+  --color-paper: #f4f6f9;
   --color-signal: #d3241b;
   --color-signal-deep: #a3190f;
   --color-signal-soft: #f6dcd9;
-  --color-amber: #e9a23b;
+  --color-sky: #3fa7d6;
   --color-ok: #2f7d4f;
 
   --font-display: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
@@ -81,7 +81,7 @@
     outline: 2px solid var(--color-signal);
     outline-offset: 3px;
   }
-  .on-dark :focus-visible { outline-color: var(--color-amber); }
+  .on-dark :focus-visible { outline-color: var(--color-sky); }
 
   [id] { scroll-margin-top: calc(var(--header-h) + 1.5rem); }
 }
@@ -123,8 +123,8 @@
   }
   .blueprint-light {
     background-image:
-      linear-gradient(to right, rgb(12 14 17 / 0.06) 1px, transparent 1px),
-      linear-gradient(to bottom, rgb(12 14 17 / 0.06) 1px, transparent 1px);
+      linear-gradient(to right, rgb(11 26 46 / 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(11 26 46 / 0.06) 1px, transparent 1px);
     background-size: 48px 48px;
   }
 
@@ -187,6 +187,6 @@
 .on-dark .eyebrow .text-signal,
 .on-dark a.text-signal,
 .on-dark p.text-signal,
-.on-dark .text-sm.text-signal { color: #f25a4f; }
+.on-dark .text-sm.text-signal { color: #ff6b5e; }
 /* Transform-only reveal for the hero headline: text is painted immediately (good LCP). */
 @keyframes rise { from { transform: translateY(0.35em); } to { transform: none; } }

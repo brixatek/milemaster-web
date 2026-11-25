@@ -29,7 +29,7 @@ export default function FaqPage() {
             {faqs.map((f, i) => (
               <li key={f.id}>
                 <a href={`#${f.id}`} className="flex gap-3 text-ink/65 hover:text-signal">
-                  <span className="eyebrow pt-0.5 text-ink/60">{String(i + 1).padStart(2, "0")}</span>
+                  <span className="eyebrow pt-0.5 text-ink/65">{String(i + 1).padStart(2, "0")}</span>
                   {f.question}
                 </a>
               </li>

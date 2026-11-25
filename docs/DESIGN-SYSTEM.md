@@ -1,6 +1,6 @@
 # Design system — "Refinery Editorial"
 
-An industrial-editorial identity built on the X-Tend brand's existing red-and-black equity. Ink-black grounds, bone paper, a single signal red, hairline rules and the Poppins typeface. Square corners throughout: no rounded cards, no glassmorphism, no drop-shadow stacks.
+An industrial-editorial identity built on the X-Tend brand's existing red-and-black equity. Deep navy grounds, cool white paper, a single signal red, hairline rules and the Poppins typeface. Square corners throughout: no rounded cards, no glassmorphism, no drop-shadow stacks.
 
 All tokens live in `src/styles/globals.css` (`@theme`) and are exposed as Tailwind utilities (`bg-ink`, `text-signal`, `text-display-l`…).
 
@@ -8,20 +8,20 @@ All tokens live in `src/styles/globals.css` (`@theme`) and are exposed as Tailwi
 
 | Token | Hex | Use |
 |---|---|---|
-| `ink` | `#0C0E11` | Primary dark ground, body text on light |
-| `ink-2` / `ink-3` | `#14181D` / `#1D2228` | Raised dark surfaces, media panels |
-| `graphite` | `#343A42` | Secondary dark UI |
-| `steel` | `#8B929B` | Muted meta on dark |
-| `mist` | `#C9CCD0` | Rules on light (rarely) |
-| `bone` | `#F2EFE9` | Light alternate section ground; text on dark |
-| `paper` | `#FAF8F4` | Default page ground |
+| `ink` | `#0B1A2E` | Deep navy: primary dark ground, body text on light |
+| `ink-2` / `ink-3` | `#13263F` / `#1A3150` | Raised dark surfaces, media panels |
+| `graphite` | `#2C3E57` | Secondary dark UI |
+| `steel` | `#8A9BB0` | Muted meta on dark |
+| `mist` | `#C8D2DE` | Rules on light (rarely) |
+| `bone` | `#EDF1F6` | Cool light alternate section ground; text on dark |
+| `paper` | `#F4F6F9` | Cool white default page ground |
 | `signal` | `#D3241B` | Brand red: primary CTAs, indices, large type on dark |
 | `signal-deep` | `#A3190F` | CTA hover |
-| signal-bright | `#F25A4F` | Automatic substitute for *small* red text on dark (WCAG AA 5.8:1) |
-| `amber` | `#E9A23B` | Data highlights only (ratings) |
+| signal-bright | `#FF6B5E` | Automatic substitute for *small* red text on navy (WCAG AA ≥ 4.7:1) |
+| `sky` | `#3FA7D6` | Data highlights only (ratings, focus ring on dark) |
 | `ok` | `#2F7D4F` | Success states |
 
-Text opacity floor: `text-ink/60` and `text-bone/60` for any small text (≥ 4.5:1 on all grounds).
+Text opacity floor: `text-ink/65` and `text-bone/60` for any small text (≥ 4.5:1 on all grounds).
 
 ## Typography
 
@@ -79,4 +79,4 @@ Fluid scale (375 → 1440px): `display-xl` 44→116px · `display-l` 36→80 · 
 
 ## Accessibility standards
 
-WCAG 2.2 AA: skip link, visible focus rings (red on light, amber on dark), 44px minimum targets, labelled form controls with linked error messages, `aria-expanded`/`aria-controls` on menus, Escape closes menus and dialogs, native `<dialog>` for search, one `h1` per page, decorative SVG hidden from assistive tech.
+WCAG 2.2 AA: skip link, visible focus rings (red on light, sky blue on dark), 44px minimum targets, labelled form controls with linked error messages, `aria-expanded`/`aria-controls` on menus, Escape closes menus and dialogs, native `<dialog>` for search, one `h1` per page, decorative SVG hidden from assistive tech.

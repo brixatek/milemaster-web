@@ -9,12 +9,12 @@ export function LongForm({ sections, aside }: { sections: Section[]; aside?: Rea
       <aside className="col-span-12 lg:col-span-3">
         <div className="lg:sticky lg:top-28">
           <nav aria-label="On this page" className="hidden lg:block">
-            <p className="eyebrow mb-4 text-ink/60">On this page</p>
+            <p className="eyebrow mb-4 text-ink/65">On this page</p>
             <ol className="space-y-2 border-l border-ink/12">
               {sections.map((s, i) => (
                 <li key={s.id}>
                   <a href={`#${s.id}`} className="-ml-px block border-l border-transparent py-1 pl-4 text-sm text-ink/65 transition-colors hover:border-signal hover:text-ink">
-                    <span className="eyebrow mr-2 text-ink/60">{String(i + 1).padStart(2, "0")}</span>
+                    <span className="eyebrow mr-2 text-ink/65">{String(i + 1).padStart(2, "0")}</span>
                     {s.title}
                   </a>
                 </li>

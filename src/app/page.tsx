@@ -54,7 +54,7 @@ export default function HomePage() {
       <section className="py-24 md:py-36">
         <div className="container-x grid-12 gap-y-14">
           <div className="col-span-12 lg:col-span-6">
-            <SectionHeading index="01" eyebrow="About X-Tend" title={<>Three decades of engineering, <span className="text-ink/60">one obsession: efficiency.</span></>} size="l" />
+            <SectionHeading index="01" eyebrow="About X-Tend" title={<>Three decades of engineering, <span className="text-ink/65">one obsession: efficiency.</span></>} size="l" />
           </div>
           <div className="col-span-12 grid gap-10 sm:grid-cols-2 lg:col-span-6 lg:pt-24" data-reveal>
             <div>
@@ -218,7 +218,7 @@ export default function HomePage() {
               {resources.slice(0, 4).map((r) => (
                 <li key={r.slug} className="bg-paper">
                   <Link href={`/resources/${r.slug}`} className="group block py-6">
-                    <p className="eyebrow text-ink/60">{r.category} · {r.readingMinutes} min read</p>
+                    <p className="eyebrow text-ink/65">{r.category} · {r.readingMinutes} min read</p>
                     <p className="mt-2 font-display text-2xl font-medium tracking-tight transition-colors group-hover:text-signal">{r.title}</p>
                     <p className="mt-2 text-ink/65">{r.summary}</p>
                   </Link>
@@ -249,7 +249,7 @@ function ProductFeature({ product: p, large }: { product: (typeof products)[numb
         <div className="mt-8 flex items-end justify-between gap-6">
           <p>
             <span className="display block text-5xl text-ink">{figure.value}</span>
-            <span className="mt-1 block text-sm text-ink/60">{figure.label}</span>
+            <span className="mt-1 block text-sm text-ink/65">{figure.label}</span>
           </p>
           <ArrowUpRight className="size-7 text-ink/30 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-signal" aria-hidden />
         </div>

@@ -112,7 +112,7 @@ export function Footer() {
       </div>
 
       <svg aria-hidden viewBox="0 0 1000 190" className="pointer-events-none -mb-[2%] block w-full select-none px-(--gutter)">
-        <text x="0" y="178" textLength="1000" lengthAdjust="spacingAndGlyphs" className="display" fill="rgb(242 239 233 / 0.04)" style={{ fontSize: 236 }}>
+        <text x="0" y="178" textLength="1000" lengthAdjust="spacingAndGlyphs" className="display" fill="rgb(237 241 246 / 0.04)" style={{ fontSize: 236 }}>
           X-TEND
         </text>
       </svg>

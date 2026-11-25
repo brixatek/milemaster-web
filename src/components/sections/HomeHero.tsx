@@ -10,7 +10,7 @@ export function HomeHero() {
   return (
     <section className="on-dark relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-ink text-bone">
       <div aria-hidden className="blueprint absolute inset-0 -z-10 opacity-70 [mask-image:radial-gradient(80%_70%_at_60%_50%,black,transparent)]" />
-      <div aria-hidden className="absolute top-1/2 left-[55%] -z-10 size-[70vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-signal/12 blur-[140px]" />
+      <div aria-hidden className="absolute top-1/2 left-[55%] -z-10 size-[70vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-sky/14 blur-[140px]" />
       <SprayField />
       {range && (
         <div className="absolute right-[4%] bottom-[14%] hidden w-[30vw] max-w-[520px] xl:block">

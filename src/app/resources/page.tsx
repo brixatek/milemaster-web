@@ -34,7 +34,7 @@ export default function ResourcesPage() {
             <li key={r.slug} className="bg-paper">
               <Link href={`/resources/${r.slug}`} className="group flex h-full flex-col justify-between gap-6 py-10 md:pr-10">
                 <div>
-                  <p className="eyebrow text-ink/60">{r.category} · {r.readingMinutes} min read</p>
+                  <p className="eyebrow text-ink/65">{r.category} · {r.readingMinutes} min read</p>
                   <h2 className="mt-3 text-3xl font-medium transition-colors group-hover:text-signal">{r.title}</h2>
                   <p className="mt-3 text-ink/70">{r.summary}</p>
                 </div>
